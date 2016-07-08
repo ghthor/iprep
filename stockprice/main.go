@@ -10,7 +10,7 @@ import (
 
 type Prices []int
 
-func (p Prices) maxProfit() (profit int) {
+func (p Prices) MaxProfit() (profit int) {
 	// TODO: Implementation
 	return 0
 }
@@ -39,5 +39,5 @@ func main() {
 		log.Fatal(err)
 	}
 
-	fmt.Println(prices.maxProfit())
+	fmt.Println(prices.MaxProfit())
 }
