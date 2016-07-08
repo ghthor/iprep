@@ -17,6 +17,9 @@ func TestMaxProfitCalculation(t *testing.T) {
 	}, {
 		[]int{10, 9, 8, 7, 3, 1},
 		-1,
+	}, {
+		[]int{50, 50, 100, 40, 40, 95},
+		55,
 	}}
 
 	for i, c := range cases {
