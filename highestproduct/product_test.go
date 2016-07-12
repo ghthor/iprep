@@ -15,6 +15,9 @@ func TestHighestProductSearch(t *testing.T) {
 	}, {
 		[]int{9, 5, 5, 4, 9, 6, 3, 4, 1, 10, 1, 6},
 		9 * 9 * 10,
+	}, {
+		[]int{-10, -10, 1, 3, 2},
+		300,
 	}}
 
 	for i, c := range cases {
