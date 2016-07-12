@@ -32,7 +32,7 @@ func (result contiguousProduct) Join(other contiguousProduct) int {
 	return result.product * other.product
 }
 
-func (p ProductInputArray) Products() Products {
+func (p ProductInputArray) Products_1() Products {
 	products := make(Products, 0, len(p))
 
 	for i := range p {
