@@ -33,6 +33,9 @@ func TestArrayProductCalculation(t *testing.T) {
 	cases := []productTestCase{{
 		[]int{1, 7, 3, 4},
 		[]int{84, 12, 28, 21},
+	}, {
+		[]int{2, 4, 10},
+		[]int{40, 20, 8},
 	}}
 
 	for i, c := range cases {
