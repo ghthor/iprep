@@ -25,17 +25,20 @@ func (n *IntList) Unique() *IntList {
 	log := make(map[int]int, 1)
 	log[n.v] = n.v
 
-	node := n
-	for node.next != nil {
-		if _, exists := log[node.next.v]; !exists {
+	prev := n
+	node := n.next
+	for node != nil {
+		if _, exists := log[node.v]; !exists {
 			// Mark that we've seen the value once and
-			log[node.next.v] = node.next.v
+			log[node.v] = node.v
 		} else {
 			// Remove the next node from the list, since the
 			// value has already been seen.
-			node.next = node.next.next
+			prev.next = node.next
+			node = prev
 		}
 
+		prev = node
 		node = node.next
 	}
 
